@@ -36,14 +36,13 @@ THEN the password is either displayed in an alert or written to the page
 
 Deployment URL
 
-https://marcojansen-gmx.github.io/HTML-Git-CSS-01/index.html
+https://marcojansen-gmx.github.io/Java-Script-03/index.html
 
 GitHub URL
 
-
-https://github.com/marcojansen-gmx/HTML-Git-CSS-01.git
+https://github.com/marcojansen-gmx/Java-Script-03.git
 ## Mock-Up
 
 The following image shows the web application's appearance and functionality:
 
-![password generator (layout)](https://github.com/marcojansen-gmx/HTML-Git-CSS-01/blob/main/blob/main/assets/01-html-css-git-homework-demo.png?raw=true)
+![password generator (layout)](https://github.com/marcojansen-gmx/HTML-Git-CSS-01/assets/Javascript.png?raw=true)
