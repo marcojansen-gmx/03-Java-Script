@@ -1,3 +1,6 @@
+// changed bad UX "prompt" and "alerts" to checkboxes and textarea to improve code
+// also changed querySelector to getElementById in that process
+
 function getRandomUpperCase(){
   return String.fromCharCode(Math.floor(Math.random()*26)+65);
  }
