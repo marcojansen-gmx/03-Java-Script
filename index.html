@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- adjusted charset to operate with string.fromCharCode formular javascript-->
-    <meta charset="UTF-16" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
@@ -31,30 +31,31 @@
             </section>
             <!-- end section -->
             <!-- start section -->
-              <section class="text-center">
-                <label class="my-3"><h3>Choose password length :</h3></label>
-                <input type="number" maxlength="128" value="8" id="length">
-              <section>
-              <!-- end section -->
-              <!-- start row -->
-              <div class="row">
-                <div class="checks my-3 pr-5">
-                  <label  class="label">Enable UpperCase Alphabets :</label>
+            <section class="text-center"><h6>Choose password length between 8 and 128 :</h6>
+              <label class="my-3"></label>
+              <input type="range" name="rangeInput" value="8" min="8" max="128" id="length" onchange="updateTextInput(this.value);">
+              <input type="text" id="textInput" value="">
+            </section>
+                <!-- end section -->
+                <!-- start row -->
+            <form class="row">
+              <div class="checks my-3 pr-5">
+                <label  class="label">Enable UpperCase Alphabets :</label>
                   <input type="checkbox" id="upper" checked class="val"><br>
-                </div> 
-                <div class="checks my-3 pr-5">
+              </div> 
+              <div class="checks my-3 pr-5">
                   <label  class="label">Enable LowerCase Alphabets :</label>
                   <input type="checkbox" id="lower" checked class="val"><br>
-                </div>
-                <div class ="checks my-3 pr-5">
+              </div>
+              <div class ="checks my-3 pr-5">
                   <label  class="label">Enable Numbers :</label>
                   <input type="checkbox" id="number" checked class="val"><br>
-                </div>
-                <div class="checks my-3 pr-5">
+              </div>
+              <div class="checks my-3 pr-5">
                   <label  class="label">Enable Symbols :</label>
                   <input type="checkbox" id="symbol" checked class="val"><br><br> 
-                </div>
               </div>
+            </form>
               <!-- end row -->
               <div class="card-body">
                 <textarea readonly id="answer" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>

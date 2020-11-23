@@ -1,6 +1,10 @@
 // changed bad UX "prompt" and "alerts" to checkboxes and textarea to improve code
 // also changed querySelector to getElementById in that process
 
+function updateTextInput(val) {
+  document.getElementById('textInput').value=val; 
+}
+
 function getRandomUpperCase(){
   return String.fromCharCode(Math.floor(Math.random()*26)+65);
  }
@@ -39,7 +43,8 @@ const randomFunc = {
 };
 
 // Add event listener to generate button
-generateBtn.addEventListener('click', () =>{
+generateBtn.addEventListener('click', () => {
+
   const length = +lengthEl.value;
   const hasUpper = upperEl.checked;
   const hasLower = lowerEl.checked;
