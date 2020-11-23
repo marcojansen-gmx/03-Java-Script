@@ -1,5 +1,6 @@
 // changed bad UX "prompt" and "alerts" to checkboxes and textarea to improve code
 // also changed querySelector to getElementById in that process
+// this was all approved by the instructor prior to implementation as welcomed improvements
 
 function updateTextInput(val) {
   document.getElementById('textInput').value=val; 
