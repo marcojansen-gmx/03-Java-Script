@@ -45,4 +45,4 @@ https://github.com/marcojansen-gmx/Java-Script-03.git
 
 The following image shows the web application's appearance and functionality:
 
-![password generator (layout)](https://github.com/marcojansen-gmx/HTML-Git-CSS-01/assets/Javascript.png?raw=true)
+![password generator (layout)](https://github.com/marcojansen-gmx/Java-Script-03/blob/main/Assets/Javascript.png?raw=true)
