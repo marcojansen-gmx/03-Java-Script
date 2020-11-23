@@ -2,27 +2,33 @@
 // also changed querySelector to getElementById in that process
 // this was all approved by the instructor prior to implementation as welcomed improvements
 
+// Function to display numbers for ranged input
 function updateTextInput(val) {
   document.getElementById('textInput').value=val; 
 }
 
+// Function to return random upper case letters
 function getRandomUpperCase(){
   return String.fromCharCode(Math.floor(Math.random()*26)+65);
  }
 
+ // Function to return random lower case letters
  function getRandomLowerCase(){
   return String.fromCharCode(Math.floor(Math.random()*26)+97);
 }
 
+// Function to return random numbers
 function getRandomNumber(){
   return String.fromCharCode(Math.floor(Math.random()*10)+48);
 }
 
+// Function to return random special characters
 function getRandomSymbol(){
   var symbol = "!@#$%^&*(){}[]=<>/,.|~?";
   return symbol[Math.floor(Math.random()*symbol.length)];
 }
 
+// Declaring variables
 var answerEl = document.getElementById("answer");
 var lengthEl = document.getElementById("length");
 var numberEl = document.getElementById("number");
@@ -33,7 +39,7 @@ var copyEl = document.getElementById("copy");
 // Assignment Code
 var generateBtn = document.getElementById("generate");
 
-// querySelector replaced by getElementById as ID was used in HTML
+// QuerySelector replaced by getElementById as ID was used in HTML
 // var generateBtn = document.querySelector("#generate");
 
 const randomFunc = {
@@ -73,6 +79,7 @@ function generatePassword(upper, lower, number, symbol, length){
       return '';
   }
 
+// Loop to assemble password
   for(let i=0; i<length; i+=typesCount) {
       typesArr.forEach(type => {
           const funcName = Object.keys(type)[0];
